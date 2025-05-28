@@ -1,4 +1,17 @@
 import numpy as np
+import pandas as pd
+
+def licz_srednia(lista):
+    return pd.Series(lista).mean()
+
+def znajdz_min(lista):
+    return pd.Series(lista).min()
+
+def znajdz_max(lista):
+    return pd.Series(lista).max()
+
+def suma_elementow(lista):
+    return pd.Series(lista).sum()
 
 def dodawanie(liczba1, liczba2):
     return np.add(liczba1, liczba2)

@@ -1,4 +1,8 @@
-from calculator import dodawanie,dzielenie,mnozenie,odejmowanie
+from calculator import dodawanie,dzielenie,mnozenie,odejmowanie,licz_srednia
+
+def test_licz_srednia():
+    assert licz_srednia([1, 2, 3]) == 2.0
+
 def test_dodawanie():
     assert dodawanie(2, 3) == 5
     assert dodawanie(-1, 1) == 0
